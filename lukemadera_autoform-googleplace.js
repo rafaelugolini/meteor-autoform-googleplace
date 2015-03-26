@@ -239,8 +239,8 @@ Template.afGooglePlace.rendered =function() {
   ELES.input =ele;
   ELES.googleAttribution =this.find('div.lm-autoform-google-place-attribution');
   var eleDropdown =this.find('div.lm-autoform-google-place-predictions');
-  var types =[];    //either [blank] or one or more of: 'establishment', 'geocode'
-  var componentRestrictions ={country:'us'};
+  var types =['(cities)'];    //either [blank] or one or more of: 'establishment', 'geocode'
+  var componentRestrictions ={};
   var options = {
     //bounds: defaultBounds,
     types: types,
